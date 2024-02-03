@@ -1,0 +1,17 @@
+alias mujoco="source /home/timsre/mujoco/bin/activate"
+
+alias ai="source /home/timsre/ai/bin/activate"
+
+alias pybullet="source /home/timsre/pybullet/bin/activate"
+
+alias clear="clear && source /home/timsre/.bashrc"
+
+alias cleae="sl"
+
+alias webmbatchmp3="find . -type f -iname "*.webm" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -ab 128k -ar 44100 -y "${FILE%.webm}.mp3";' _ '{}' \;"
+
+alias mkvbatchmp3="find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg -i "${FILE}" -vn -c:a libmp3lame -y "${FILE%.mkv}.mp3";' _ '{}' \;"
+
+alias q="exit"
+
+alias dunst-reload="killall dunst; notify-send 'Dunst reloaded'"

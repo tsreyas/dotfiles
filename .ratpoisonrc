@@ -1,0 +1,122 @@
+#exec xsetroot -cursor_name left_ptr
+startup_message off
+escape Super_L
+
+set border 0
+#set padding 10 10 10 10
+set font "Comic Sans MS"
+set bgcolor #000000
+set fgcolor #FFFFFF
+
+#set message timeout
+msgwait 2
+
+#messages appear in the center of the screen
+set bargravity c
+
+#make a screenshot
+#alias sshot exec import -window root ~/screenshot-$(date +%F).jpg
+#definekey top M-C-Print sshot
+
+#virtual desks
+gnewbg one
+gnewbg two
+
+definekey top M-l exec ratpoison -c "select -" -c "gprev" -c "next"
+definekey top M-h exec ratpoison -c "select -" -c "gnext" -c "next"
+definekey top Print exec gscreenshot -f '/home/timsre/Pictures/Screenshots/screenshot_$hx$w_%Y-%m-%d.png' -s -c
+#definekey top M-Print exec shutter -a
+#definekey top C-print exec shutter -f
+
+#switch between windows
+definekey top M-j next
+definekey top M-k prev
+
+#workspaces
+exec /usr/bin/rpws init 6 -k
+
+bind C-1 exec rpws 1
+bind C-2 exec rpws 2
+bind C-3 exec rpws 3
+bind C-4 exec rpws 4
+bind C-5 exec rpws 5
+bind C-6 exec rpws 6
+
+#enable fullscreen for misbehaving apps
+exec wmname LG3D
+
+bind O tmpwm openbox
+
+bind M-exclam colon exec gksudo
+
+#apps
+#unbind M-t
+#bind M-t exec aterm
+bind c exec kitty
+
+unbind C-exclam
+bind C-exclam colon exec kitty -e
+
+bind W exec firefox
+bind C-W exec firefox --private-window
+bind M exec thunderbird
+bind f exec thunar
+bind r exec rofi -modes "drun,run" -show drun -font "Comic Sans MS 14"
+
+bind C exec kitty -e vim .ratpoisonrc
+
+#definekey XF86AudioLowerVolume pamixer -d 5 #to decrease 5%
+#definekey XF86AudioRaiseVolume pamixer -i 5 #to increase 5%
+#definekey XF86AudioMute pamixer -t #to toggle mute and unmute
+
+#definekey XF86MonBrightnessUp brightnessctl set 1000+
+#definekey XF86MonBrightnessDown brightnessctl set 1000-
+
+bind F9 exec shutdown -P now
+bind F10 exec shutdown -r now
+unbind l
+bind l exec xlock
+
+#autostart apps
+
+#transparency and wallpaper
+#exec picom -b -c -f -D 5 --vsync --corner-radius 2 &
+exec nitrogen --restore
+
+#System tray
+#unmanage stalonetray
+#exec pgrep -l stalonetray || stalonetray -t true --icon-size=16 --kludges=force_icons_size
+
+#IBus
+exec ibus-daemon -drx
+
+#Power management
+#exec cbatticon
+
+#Volume icon
+exec pasystray -g
+
+#NetworkManager applet
+#exec nm-applet
+
+#Birdtray
+#exec birdtray
+
+#MControlCenter
+exec mcontrolcenter
+
+#KeepassXC
+#exec keepassxc
+
+#Bluetooth applet
+#exec blueman-applet
+
+#Notification daemon
+exec xfce4-notifyd
+unmanage xfce4-notifyd
+
+#KDE Connect
+exec kdeconnect-indicator
+
+#Sloppy focus
+#exec /usr/share/ratpoison/sloppy
