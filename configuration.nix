@@ -25,7 +25,7 @@
   networking.networkmanager.enable = true;
 
   # Enable network manager applet
-  programs.nm-applet.enable = true;
+  programs.nm-applet.enable = false;
 
   # Set your time zone.
   time.timeZone = "Asia/Tokyo";
@@ -64,7 +64,6 @@
   ibus.engines = with pkgs.ibus-engines; [ anthy ];
   };
 
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -86,7 +85,7 @@
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.timsre = {
@@ -120,6 +119,10 @@
 
   # Install gamemode
   programs.gamemode.enable = true;
+
+  #Install virt-manager
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # Enable Firmware Update Daemon
   services.fwupd.enable = true;
