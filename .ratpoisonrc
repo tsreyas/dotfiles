@@ -90,9 +90,6 @@ exec nitrogen --restore
 #IBus
 exec ibus-daemon -drx
 
-#Power management
-#exec cbatticon
-
 #Volume icon
 exec pasystray -g
 
