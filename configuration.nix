@@ -107,7 +107,7 @@
   neovim wget firefox freecad cpu-x crawlTiles lutris btop discord gimp gparted keepassxc onlyoffice-bin w3m cmus mpv
   obs-studio speedcrunch neomutt newsboat ytfzf freetube blueman lxappearance nitrogen hypnotix pitivi stacer
   pkgs.libsForQt5.kdeconnect-kde gscreenshot kitty rofi tenacity xfce.thunar xfce.thunar-volman xfce.thunar-archive-plugin
-  xfce.thunar-media-tags-plugin timeshift upscayl viewnior zathura
+  xfce.thunar-media-tags-plugin timeshift upscayl viewnior pasystray zathura
   ];
 
   # Install Steam
