@@ -1,4 +1,4 @@
-export PATH=/home/timsre/.yarn/bin:/usr/bin:/usr/local/bin:/home/timsre/.local/bin:/opt/scilab/bin:/opt/webex/bin:$PATH
+export PATH=/home/timsre/.yarn/bin:/usr/bin:/usr/local/bin:/bin:/usr/sbin:/usr/local/sbin:/sbin:/home/timsre/.local/bin:/opt/scilab/bin:/opt/webex/bin:$PATH
 
 PS1='\u@\H:\w$ '
 
@@ -19,4 +19,4 @@ export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
 #Startup commands
 
 #fortune | cowsay -f turtle
-fortune | pokemonsay -N -p oricorio-sensu
+fortune | pokemonsay -N -p gardevoir
