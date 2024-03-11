@@ -1,0 +1,67 @@
+arandr
+arduino ide
+btop
+cheese/webcamoid
+cpu-x
+crawl/stone-soup
+discord
+easytag
+ibus
+firefox
+freecad
+gmsh
+gimp
+gparted
+gamemode
+keepassxc
+lutris (with wine + winetricks + steam + retroarch)
+onlyoffice
+w3m
+mcontrolcenter
+minetest
+mpv
+nvidia binary drivers (open source if possible)
+obs-studio
+paraview
+speedcrunch
+supertuxkart
+neomutt
+virt-manager
+zoom
+newsboat
+freetube
+blueman
+lxappearance
+hypnotix
+nitrogen
+pasystray + pavucontrol
+pitivi
+tor
+stacer
+kde-connect
+leafpad
+xfce4-power-manager
+xfce4-notifyd
+dconf
+thunar
+gscreenshot
+kitty
+neovim (with nvchad)
+rofi
+timeshift
+xarchiver
+zathura
+
+pip and pipx packages:
+
+jupyter
+pybullet
+numpy
+scipy
+pandas
+matplotlib
+sympy
+mujoco
+anipy-cli
+ytfzf
+
