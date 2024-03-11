@@ -14,4 +14,12 @@ alias mkvbatchmp3="find . -type f -name "*.mkv" -exec bash -c 'FILE="$1"; ffmpeg
 
 alias q="exit"
 
-alias dunst-reload="killall dunst; notify-send 'Dunst reloaded'"
+alias vim="nvim"
+
+alias ddg="w3m https://duckduckgo.com/lite"
+
+alias youtube="ytfzf -fsl -cS --sort"
+
+#alias td="discordo --token "NDg5MzY3OTUxMTU0MjE2OTcx.GZ8ZQb.pMRSRLnQOjMO5uymGUkQl8RfnVku8IAve4OrXI""
+
+alias bh="bluetoothctl connect 33:33:22:3B:09:59"
