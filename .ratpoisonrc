@@ -4,7 +4,7 @@ escape Super_L
 
 set border 0
 #set padding 10 10 10 10
-set font "Comic Sans MS"
+set font "Hurmit Nerd Font"
 set bgcolor #000000
 set fgcolor #FFFFFF
 
@@ -61,9 +61,9 @@ bind W exec firefox
 bind C-W exec firefox --private-window
 bind M exec thunderbird
 bind f exec thunar
-bind r exec rofi -modes "drun,run" -show drun -font "Comic Sans MS 14"
+bind r exec rofi -modes "drun,run" -show drun -font "Hurmit Nerd Font 14"
 
-bind C exec kitty -e vim .ratpoisonrc
+bind C exec kitty -e nvim .ratpoisonrc
 
 #definekey XF86AudioLowerVolume pamixer -d 5 #to decrease 5%
 #definekey XF86AudioRaiseVolume pamixer -i 5 #to increase 5%
@@ -90,6 +90,9 @@ exec nitrogen --restore
 #IBus
 exec ibus-daemon -drx
 
+#Power management
+#exec cbatticon
+
 #Volume icon
 exec pasystray -g
 
@@ -111,6 +114,9 @@ exec mcontrolcenter
 #Notification daemon
 exec xfce4-notifyd
 unmanage xfce4-notifyd
+
+#Power management
+exec xfce4-power-manager
 
 #KDE Connect
 exec kdeconnect-indicator
